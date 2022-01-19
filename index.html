@@ -5,11 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/styles.css">
-    <title>Landing Page</title>
+    <script src="/js/nav.js" defer></script>
+    <script src="https://kit.fontawesome.com/deccf305a0.js" crossorigin="anonymous"></script>
+    <title>Landing Page For SPACEX</title>
 </head>
 <body>
-    <div class="container">
-        
+    <!-- Navbar -->
+    <header id= "header" class="primary-header flex">
+        <img id = "header-img" src="images/launch.png" alt="logo" class="logo">
+
+        <button class = "mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <span class = "sr-only"></span>
+        </button>
+
+        <nav id="nav-bar">
+            <ul id = "primary-navigation" class="primary-navigation flex" data-visible = "false">
+                <li class="nav-link"><a href="#"></a>Home</li>
+                <li class="nav-link"><a href="#"></a>About</li>
+                <li class="nav-link"><a href="#"></a>Job</li>
+                <li class="nav-link"><a href="#"></a>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Navbar Ends -->
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+
+        <!-- Hero Section Content -->
+        <div class="hero-section-content">
+            <h1>WELCOME</h1>
+            <h3>To SpaceX World</h3>
+            <hr>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ex nulla autem iste expedita repudiandae temporibus, rem exercitationem, dolores odio ad fugiat eaque consectetur vel tenetur soluta tempora fugit! Fuga?
+
+            </p>
+            <button class = "btn btn1">EXPLORE</button>
+            <button class="btn btn2">WATCH US</button>
+            <div class="social-media">
+                <i class="fa fa-facebook-square"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+        </div>
+        <!-- Hero Section Content End -->
+
+        <!-- Hero Section img -->
+        <div class="hero-section-img">
+            <img src="/images/kisspng-astronaut-space-suit-royalty-free-drawing-5af3814f5de916.7275027215259077913847.png" alt="astronaut">
+        </div>
+
     </div>
+    <!-- Hero Section End -->
+  
 </body>
 </html>

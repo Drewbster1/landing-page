@@ -1,0 +1,176 @@
+/* Font-families */ 
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300;400;500;600&family=Poppins:wght@900&display=swap');
+
+/* Universal Styling */ 
+
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    background: #14273d;
+    font-weight: 700;
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    
+}
+
+.flex{
+    display: flex;
+    gap: var(--gap,1rem)
+}
+/*Link button styles*/
+.nav-link{
+    text-align: center;
+    padding: 10px 30px;
+    padding-top: 5px;
+    border-radius: 50px;
+    background-color: #17375b;
+    transition: transform .3s;
+}
+.nav-link:hover{
+    background-color: #4475e2;
+    cursor: pointer;
+    transform: translateY(5px);
+}
+/* priamry header */ 
+.logo{
+    margin:2rem;
+    height: 60px;
+    width: auto;
+}
+.logo:hover{
+    cursor: pointer;
+}
+/* removes the menue toggle when not in mobile mode*/
+.mobile-nav-toggle{
+    display: none;
+}
+.primary-header{
+    align-items: center;
+    justify-content: space-between;
+}
+.primary-navigation{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: hsl(0,0%,100%,0.1);
+    backdrop-filter: blur(1rem);
+}
+@media(max-width: 35em){
+    .primary-navigation{
+        position: fixed;
+        z-index: 1000;
+        inset: 0 0 0 30%;
+        flex-direction: column;
+        padding: 10rem 2em;
+
+        transform: translateX(100%);
+        transition: transform 350ms ease-in;
+    }
+    .mobile-nav-toggle{
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        background-color: transparent;
+        background:url("/images/icon-hamburger.svg");
+        background-repeat: no-repeat;
+        width: 2rem;
+        border: 0;
+        aspect-ratio: 1;
+        top: 2rem;
+        right:2rem;
+    }
+    .mobile-nav-toggle[aria-expanded="true"]{
+        background-image: url(/images/icon-close.svg);
+    }
+}
+
+/*When the screen is at a larger scale */
+@media( min-width: 35em){
+    .primary-navigation{
+        background: none;
+        margin-right: 6rem;
+    }
+} 
+/*When the datavisible variable is set to true in the js, the bar will slide out*/ 
+.primary-navigation[data-visible="true"]{
+    transform: translateX(0%);
+}
+
+
+/* hero section styling */ 
+.hero-section{
+    display: flex;
+
+}
+
+.hero-section-content{
+    margin-left: 60px;
+    margin-bottom: 100px;
+}
+.hero-section-content h3{
+    margin-top: -35px;
+    color: #4475e2;
+}
+.hero-section-content hr{
+    width: 130px;
+    margin-left: 0px;
+    margin-top: -10px;
+}
+.hero-section-content .btn{
+    border: none;
+    outline:none;
+    padding: 15px 45px;
+    background: transparent;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    transform: transform .3s;
+}
+.hero-section-content .btn:hover{
+    transform: translateY(5px);
+}
+
+.hero-section-content .btn1{
+    background-color: #17375b;
+}
+.hero-section-content .btn1:hover{
+    background-color: #4475e2;
+}
+.hero-section-content .btn2{
+    border: 2px solid #4475e2;
+    color: #4475e2;
+}
+.hero-section-content .btn2:hover{
+    background: #4475e2;
+    color: #fff;
+}
+
+/* social media icons styling*/
+.social-media{
+    margin-top: 10px;
+    display: flex;
+}
+.social-media i{
+    font-size: 35px;
+    border: 2px solid #4475e2;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .3s;
+    border-radius: 50%;
+}
+.social-media i:hover{
+    background-color: #4475e2;
+    color: #fff;
+}
+
+
+
+
